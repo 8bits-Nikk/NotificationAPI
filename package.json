@@ -1,0 +1,29 @@
+{
+  "name": "notificationapi",
+  "version": "1.0.0",
+  "description": "Api for sending remote FCM notification via server",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npm run server.js",
+    "devStart": "nodemon --exec babel-node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Nikhil Makwana",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
