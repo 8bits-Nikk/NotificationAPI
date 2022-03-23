@@ -8,6 +8,6 @@ add serviceAccount.js under ROOT/key/serviceAccount.js
 
 npm install 
 
-npm run start
+node start
 or
 npm run devStart
