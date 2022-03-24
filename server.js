@@ -23,6 +23,7 @@ app.post('/v1/login', (req, res) => {
     })
 })
 
+////////////////////////////////
 const authenticateToken = (req, res, next) => {
     const authHeader = req.headers['authorization']
     const token = authHeader && authHeader.split(' ')[1]
@@ -38,10 +39,11 @@ const authenticateToken = (req, res, next) => {
         next()
     })
 }
-
 app.use('/v1/send-message', authenticateToken, sendMessageRouter)
 
-app.listen(process.env.SERVER_PORT || 4000, () => {
-    let port = process.env.SERVER_PORT || 4000
-    console.log("Server is Running on : " + port)
+////////////////////////////////
+const PORT = process.env.SERVER_PORT || 4000
+app.listen(PORT, () => {
+
+    console.log("Server is Running on : " + PORT)
 })

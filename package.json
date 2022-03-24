@@ -2,12 +2,11 @@
   "name": "notificationapi",
   "version": "1.0.0",
   "description": "Api for sending remote FCM notification via server",
-  "main": "index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "npm run server.js",
-    "devStart": "nodemon --exec babel-node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "devStart": "nodemon server.js"
   },
   "keywords": [],
   "author": "Nikhil Makwana",
